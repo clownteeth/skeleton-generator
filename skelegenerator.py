@@ -19,8 +19,9 @@ with open(file2) as target_graves:
 	for skeleton in target_graves:
 		skelepowers.append(skeleton)
 
-#test time
+#Decide which parts to use
 newskeleton = str.strip(skelepowers[random.randint(0, (len(skelepowers)-1))])
 newbones = skeleparts[random.randint(0, (len(skeleparts)-1))]
 
+#skeleton LIVES
 print(newskeleton.rstrip() + newbones.rstrip() + " the skeleton")
